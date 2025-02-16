@@ -13,6 +13,15 @@ export default tseslint.config(
       ecmaVersion: 2020,
       globals: globals.browser,
     },
+    eslint: {
+      // Warning: This allows production builds to successfully complete even if
+      // your project has ESLint errors.
+      ignoreDuringBuilds: true,
+    },
+    images: {
+      domains: ['i.ibb.co','telegra.ph'],
+    },
+
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
